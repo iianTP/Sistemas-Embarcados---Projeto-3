@@ -1,0 +1,10 @@
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:87:5:main	176	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:177:6:SystemClock_Config	96	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:227:13:MX_USART2_UART_Init	8	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:262:13:MX_USART3_UART_Init	8	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:295:13:MX_DMA_Init	16	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:322:13:MX_GPIO_Init	48	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:364:8:HAL_GPIO_EXTI_Callback	24	static,ignoring_inline_asm
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:377:8:HAL_UART_RxCpltCallback	16	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:394:8:HAL_UART_TxCptlCallback	16	static
+C:/Users/iante/OneDrive/Documents/SEProjeto3/CLIENT/Core/Src/main.c:406:6:Error_Handler	4	static,ignoring_inline_asm
