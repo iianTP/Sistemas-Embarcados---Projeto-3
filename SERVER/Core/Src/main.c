@@ -149,10 +149,10 @@ int main(void)
     	button_pressed = 0;
     	for (int i = 0; i < counter; i++){
     		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
-			HAL_Delay(500);
+			HAL_Delay(200);
 
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
-			HAL_Delay(500);
+			HAL_Delay(200);
     	}
     }
 

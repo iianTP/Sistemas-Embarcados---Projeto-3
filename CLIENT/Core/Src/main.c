@@ -137,7 +137,7 @@ int main(void)
 	  }
 
 	  if (led_flicking == 1){
-		  led_flicking = 0;
+
 
 		  for (int i = 0; i < counter; i ++){
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
@@ -146,6 +146,8 @@ int main(void)
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 			  HAL_Delay(500);
 		  }
+
+		  led_flicking = 0;
 
 		  char buffer[150];
 		  int len;
@@ -362,7 +364,7 @@ static void MX_GPIO_Init(void)
 
 
   void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	  if (GPIO_Pin == GPIO_PIN_13) {
+	  if (GPIO_Pin == GPIO_PIN_13 && led_flicking == 0) {
 
 		  uint32_t curr_click = HAL_GetTick();
 		  if ((curr_click - last_click) < 200) return;
