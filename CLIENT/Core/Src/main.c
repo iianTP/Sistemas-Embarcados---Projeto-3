@@ -138,7 +138,6 @@ int main(void)
 
 	  if (led_flicking == 1){
 
-
 		  for (int i = 0; i < counter; i ++){
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 			  HAL_Delay(500);
@@ -393,11 +392,6 @@ static void MX_GPIO_Init(void)
 
   }
 
-  void HAL_UART_TxCptlCallback(UART_HandleTypeDef *huart){
-	  if (huart->Instance == USART3){
-
-	  }
-  }
 
 /* USER CODE END 4 */
 
